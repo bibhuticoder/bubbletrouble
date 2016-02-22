@@ -3,7 +3,7 @@ $(window).load(function(){
  
     var canvas = $("#canvas")[0];
     var ctx = canvas.getContext('2d');
-    ctx.lineWidth = 2;
+    
     
     var Width,
         Height,
@@ -34,6 +34,15 @@ $(window).load(function(){
     function draw(){
   
         ctx.clearRect(0, 0, Width, Height);
+        
+        ctx.lineWidth = 2;
+        
+        //draw name
+        ctx.font = "bolder 50px Cursive";
+        ctx.fillStyle = "black";
+        var msg = "Bubble Trouble";
+        ctx.fillText(msg, Width/2 - (msg.length * 50)/4, Height/2);
+        
         
         //draw player   
          player.x += player.speedX;
