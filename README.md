@@ -1,3 +1,3 @@
-# pingpong
+# bubbletrouble
 
-See the demo here : https://bibhuticoder.github.io/pingpong
+See the demo here : https://bibhuticoder.github.io/bubbletrouble
